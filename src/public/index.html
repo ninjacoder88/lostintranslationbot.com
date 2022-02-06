@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lost In Translation Bot</title>
+        <!--<link rel="icon" href="favicon.png" />-->
+        <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-5.1.3.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+    </head>
+    <body class="h-100">
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-2 border-end">
+                    <ul class="list-group" style="position: fixed;">
+                        <a href="#about" class="list-group-item list-group-item-action bg-dark text-white">About</a>
+                        <a href="#mod-commands" class="list-group-item list-group-item-action bg-dark text-white">Mod Commands</a>
+                        <a href="#chat-commands" class="list-group-item list-group-item-action bg-dark text-white">Chat Commands</a>
+                        <a href="#add" class="list-group-item list-group-item-action bg-dark text-white">Add To Channel</a>
+                        <a href="#report" class="list-group-item list-group-item-action bg-dark text-white">Report A Bug</a>
+                        <a href="#donate" class="list-group-item list-group-item-action bg-dark text-white">Donate</a>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <h1 class="text-center text-purple">lost in translation bot</h1>
+
+                    <div id="about" class="mt-5 text-white">
+                        <h3>About</h3>
+                        <p>Lost In Translation Bot, litbot for short, is a Twitch bot that translates... Litbot was born out of</p>
+                        <p>Litbot currently only operates in English but can translate to any supported language found here ... If you are interested in helping to translate litbot to be native to other languages, contact us.</p>
+                        <p>Litbot ignores chat from the broadcaster, mods, and vips.</p>
+                    </div>
+
+                    <div id="mod-commands" class="mt-5 text-white">
+                        <h3>Mod Commands</h3>
+                        <p><em>!litbot mode</em> - Gets the current mode for the channel and posts in chat.</p>
+                        <p>!litbot mode translate - Sets the mode to translate. In translate mode, any chat not in the approved languages will be translated and posted in chat.</p>
+                        <p>!litbot mode moderate - Sets the mode to moderate. In moderate mode, any chat not in the approved language will be deleted.</p>
+                        <p>!litbot mode off - Sets the mode to off. In off mode, all chat will be ignored.</p>
+                        <p>!litbot lang add XX - Adds the language to the list of approved languages. The XX is the ISO-639-1 code. A list of supported languages can be found <a href="https://cloud.google.com/translate/docs/languages">here</a></p>
+                        <p>!litbot lang remove XX - Removed the language from the list of approved languages.</p>
+                        <p>!litbot user add XXXXX - Adds the user to a list of approved users. Approved users chat is ignored by the bot</p>
+                        <p>!litbot user remove XXXXX - Removes the user from the list of approved users.</p>
+                        <p>!litbot user translate-on XXXXX - </p>
+                        <p>!litbot user translate-off XXXXX - </p>
+                        <p>!litbot help - COMING SOON</p>
+                        <p>!litbot translate - COMING SOON</p>
+                    </div>
+
+                    <div id="chat-commands" class="mt-5 text-white">
+                        <h3>Chat Commands</h3>
+                        <p>!litbot lang - Posts in chat the list of languages the streamer supports</p>
+                        <p>!litbot hello - Posts in chat some information about the bot</p>
+                    </div>
+
+                    <div id="add" class="mt-5 text-white">
+                        <h3>Add To Your Channel</h3>
+                        <p>Interested in adding litbot to your channel? Currently we don't have an automated system but if you fill out the form below, we will be in contact shortly</p>
+                        <p>In order for litbot to be able to operate properly in moderate mode, it must be made a channel moderator</p>
+                        <p>At least one language must be set in order for litbot to do its job.</p>
+                    </div>
+
+                    <div id="report" class="mt-5 text-white">
+                        <h3>Report A Bug</h3>
+                        <p>Found A Bug? Fill out the form below and let us know. The more information you provide the easier it will be to troubleshoot.</p>
+                        <div class="card text-white bg-secondary" style="width: 18rem">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label>Channel</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Approximate Time (UTC)</label>
+                                    <input type="date" class="form-control" />
+                                    <input type="time" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Link to VOD</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Comments</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="donate" class="mt-5 text-white">
+                        <h3>Donate</h3>
+                        <p>Currently Litbot is free. Litbot is a hosted bot and uses the Google Translate API. Both the server the bot is running on and the Google API cost money.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--/container-fluid-->
+        <script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.bundle-5.1.3.min.js"></script>
+    </body>
+</html>
